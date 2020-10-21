@@ -19,7 +19,7 @@ MCPU = cortex-m4
 CFLAGS = -mcpu=$(MCPU) -mthumb
 CFLAGS += -DSTM32F446xx -DUSE_FULL_ASSERT -DUSE_STDPERIPH_DRIVER
 CFLAGS += -I$(DEVICE) -I$(CORE) -I$(PERIPH)/inc -I.
-LDFLAGS = -mcpu=$(MCPU) -mthumb -T stm32f446re_ldscript.ld -Wl,-Map=$(PROJECT).map
+LDFLAGS = -mcpu=$(MCPU) -mthumb -T stm32f446re.ld -Wl,-Map=$(PROJECT).map
 
 all: $(PROJECT).elf 
 
