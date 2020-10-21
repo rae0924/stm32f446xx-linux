@@ -10,7 +10,7 @@ and it works.
 * A text editor
 
 ## Flashing
-You can flash using GDB if you have a built-in USB debugger on your STM32 device. You can also make a .bin or .hex file from the .elf file to flash directly onto a 
+You can flash using GDB if you have a built-in USB debugger on your STM32 device. You can also probably make a .bin or .hex file from the .elf file to flash directly onto a 
 MCU using the `st-flash` command.
 
 1. In a terminal, start a GDB server: ``st-util``.
@@ -21,3 +21,10 @@ MCU using the `st-flash` command.
 ## led_on.elf
 After flashing the file, the user LED (LD2) on the Nucleo board should light up. You can blink it by hitting the reset button. The code simply configures
 the GPIO port A pin 5 to output and sets it high, so if you don't have an led, just set up an external LED attached to that pin.
+
+## Resources Used
+1. [Discovering the STM32 Microcontroller](https://legacy.cs.indiana.edu/~geobrown/book.pdf)
+2. [Bare Metal Embedded playlist on YouTube](https://www.youtube.com/playlist?list=PLERTijJOmYrDiiWd10iRHY0VRHdJwUH4g)
+3. [This YouTube video on STM32 development on Linux](https://sourceware.org/binutils/docs/ld/Scripts.html)
+3. [Linker Script documentations](https://sourceware.org/binutils/docs/ld/Scripts.html)
+4. [ST's STM32F446RE documentations](https://www.st.com/en/microcontrollers-microprocessors/stm32f446re.html#documentatio)
